@@ -1,0 +1,14 @@
+.card-container {
+  background: white;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.question-body {
+  padding: 20px;
+  padding-bottom: 15px;
+}
+.content-container {
+  padding: 20px;
+  padding-top: 0;
+}

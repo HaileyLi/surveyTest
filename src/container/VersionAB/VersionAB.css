@@ -1,0 +1,11 @@
+.button-row {
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom: 150px;
+}
+.survey-AB {
+  width: inherit;
+}
+button.MuiButton-root.MuiButton-outlined {
+  margin-right: 20px;
+}

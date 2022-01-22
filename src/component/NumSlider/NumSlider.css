@@ -1,0 +1,56 @@
+.slider-wrap {
+  margin: 0 20px 0 20px;
+  text-align: center;
+}
+label.MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementTop.css-1hpqosy-MuiFormControlLabel-root {
+  margin: 0;
+}
+
+.explain {
+  display: flex;
+  font-size: 12px;
+}
+.explain p.first {
+  text-align: left;
+  width: 50%;
+}
+.explain p.last {
+  text-align: right;
+  width: 50%;
+}
+span.MuiTypography-root.MuiTypography-body1.MuiFormControlLabel-label.css-ahj2mt-MuiTypography-root {
+  font-size: 12px;
+}
+.MuiFormGroup-root.MuiFormGroup-row.css-qfz70r-MuiFormGroup-root {
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 700px) {
+  .slider-wrap {
+    display: flex;
+  }
+  .explain {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+  }
+
+  .MuiFormGroup-root.MuiFormGroup-row.css-qfz70r-MuiFormGroup-root {
+    flex-direction: column;
+  }
+  label.MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementTop.css-1hpqosy-MuiFormControlLabel-root {
+    flex-direction: row;
+  }
+  .slider-wrap {
+    margin: 0;
+  }
+  .explain p.first {
+    text-align: left;
+    width: 100%;
+  }
+  .explain p.last {
+    text-align: left;
+    width: 100%;
+  }
+}

@@ -1,0 +1,41 @@
+body {
+  background-color: #f6f6f6;
+}
+h1 {
+  font-size: 32px;
+  text-align: center;
+}
+h2 {
+  font-size: 20px;
+}
+.question-body {
+  margin: 0;
+  font-size: 16px;
+}
+
+html {
+  height: 100%;
+  background: white;
+}
+body {
+  background: rgb(127, 127, 213);
+  background: linear-gradient(
+    137deg,
+    rgba(127, 127, 213, 1) 0%,
+    rgba(134, 168, 231, 1) 50%,
+    rgba(145, 234, 228, 1) 100%
+  );
+  min-height: 100%;
+}
+.click-heatmap {
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  background-color: #00000030;
+  border-radius: 90px;
+}

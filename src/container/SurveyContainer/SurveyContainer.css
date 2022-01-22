@@ -1,0 +1,30 @@
+.survey-container {
+  width: 640px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.delete-row {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+.card-container {
+  position: relative;
+}
+
+button.MuiButton-text.MuiButton-textPrimary {
+  text-transform: none;
+  color: #878787;
+}
+@media only screen and (max-width: 700px) {
+  .survey-container {
+    width: 100%;
+  }
+
+  .card-container {
+    margin: 10px;
+  }
+}

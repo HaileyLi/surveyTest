@@ -1,0 +1,949 @@
+{
+    "clickActionData": [
+        {
+            "id": "q1",
+            "timeStamp": 1641211892748,
+            "value": "Male"
+        },
+        {
+            "id": "q1",
+            "timeStamp": 1641211893422,
+            "value": "Female"
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211894333,
+            "value": 2
+        },
+        {
+            "id": "q2",
+            "timeStamp": 1641211894984,
+            "value": "51-60"
+        },
+        {
+            "id": "q2",
+            "timeStamp": 1641211895467,
+            "value": "70+"
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211895989,
+            "value": 3
+        },
+        {
+            "id": "q3",
+            "timeStamp": 1641211896511,
+            "value": "Master's Degree"
+        },
+        {
+            "id": "q3",
+            "timeStamp": 1641211898108,
+            "value": "Ph.D. or higher"
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211898846,
+            "value": 4
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211900395,
+            "value": 5
+        },
+        {
+            "id": "q5",
+            "timeStamp": 1641211900968,
+            "value": "Full-time employment"
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211901711,
+            "value": 6
+        },
+        {
+            "id": "q6",
+            "timeStamp": 1641211902231,
+            "value": "At school or study"
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211902818,
+            "value": 7
+        },
+        {
+            "id": "q7",
+            "timeStamp": 1641211903603,
+            "value": "6"
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211904310,
+            "value": 8
+        },
+        {
+            "id": "q8",
+            "timeStamp": 1641211905234,
+            "value": "7"
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211905889,
+            "value": 9
+        },
+        {
+            "id": "q9",
+            "timeStamp": 1641211906693,
+            "value": "8"
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211907714,
+            "value": 10
+        },
+        {
+            "id": "q10",
+            "timeStamp": 1641211908700,
+            "value": "7"
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211909255,
+            "value": 11
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211920717,
+            "value": 12
+        },
+        {
+            "id": "q12",
+            "timeStamp": 1641211922345,
+            "value": "6"
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211922906,
+            "value": 13
+        },
+        {
+            "id": "q13",
+            "timeStamp": 1641211923657,
+            "value": "7"
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211924205,
+            "value": 14
+        },
+        {
+            "id": "q14",
+            "timeStamp": 1641211924940,
+            "value": "8"
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211925490,
+            "value": 15
+        },
+        {
+            "id": "q15",
+            "timeStamp": 1641211926259,
+            "value": "Less often than once a month but at least 3 or 4 times a year"
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211927139,
+            "value": 16
+        },
+        {
+            "id": "q16",
+            "timeStamp": 1641211927734,
+            "value": "All above equally"
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211928797,
+            "value": 17
+        },
+        {
+            "id": "q17",
+            "timeStamp": 1641211929477,
+            "value": "Once a month"
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211930099,
+            "value": 18
+        },
+        {
+            "id": "q18",
+            "timeStamp": 1641211930670,
+            "value": [
+                4
+            ]
+        },
+        {
+            "id": "q18",
+            "timeStamp": 1641211931198,
+            "value": [
+                4,
+                8
+            ]
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211932260,
+            "value": 19
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211933110,
+            "value": 20
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211934355,
+            "value": 21
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211935226,
+            "value": 22
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211935978,
+            "value": 23
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211937013,
+            "value": 24
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211937695,
+            "value": 25
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211938454,
+            "value": 26
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211939210,
+            "value": 27
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211939997,
+            "value": 28
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211940894,
+            "value": 29
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211942010,
+            "value": 30
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211943008,
+            "value": 31
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211944008,
+            "value": 32
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211944920,
+            "value": 33
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211945727,
+            "value": 34
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211946452,
+            "value": 35
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211946941,
+            "value": 36
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211947527,
+            "value": 37
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211948109,
+            "value": 38
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211948759,
+            "value": 39
+        },
+        {
+            "id": "Next",
+            "timeStamp": 1641211949676,
+            "value": 40
+        }
+    ],
+    "clickArray": [
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": false,
+            "x": 645,
+            "y": 530
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 548,
+            "y": 182
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 548,
+            "y": 182
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 551,
+            "y": 216
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 551,
+            "y": 216
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 636,
+            "y": 297
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 655,
+            "y": 279
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 655,
+            "y": 279
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 674,
+            "y": 389
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 674,
+            "y": 389
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 681,
+            "y": 468
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 702,
+            "y": 307
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 702,
+            "y": 307
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 707,
+            "y": 340
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 707,
+            "y": 340
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 695,
+            "y": 465
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 672,
+            "y": 181
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 674,
+            "y": 240
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 692,
+            "y": 189
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 692,
+            "y": 189
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 682,
+            "y": 507
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 692,
+            "y": 271
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 692,
+            "y": 271
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 691,
+            "y": 416
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 666,
+            "y": 219
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 681,
+            "y": 298
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 735,
+            "y": 246
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 699,
+            "y": 322
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 771,
+            "y": 234
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 719,
+            "y": 308
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 693,
+            "y": 308
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 721,
+            "y": 212
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 695,
+            "y": 324
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 680,
+            "y": 168
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 678,
+            "y": 248
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 678,
+            "y": 259
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 663,
+            "y": 231
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 682,
+            "y": 303
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 723,
+            "y": 261
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 710,
+            "y": 327
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 763,
+            "y": 240
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 710,
+            "y": 295
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 566,
+            "y": 282
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 566,
+            "y": 282
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 683,
+            "y": 460
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 644,
+            "y": 291
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 644,
+            "y": 291
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 667,
+            "y": 386
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 621,
+            "y": 309
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 621,
+            "y": 309
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 657,
+            "y": 408
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 615,
+            "y": 321
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 615,
+            "y": 321
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 636,
+            "y": 528
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 636,
+            "y": 528
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 667,
+            "y": 650
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 674,
+            "y": 678
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 707,
+            "y": 789
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 668,
+            "y": 238
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 680,
+            "y": 325
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 680,
+            "y": 250
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 690,
+            "y": 340
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 690,
+            "y": 313
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 681,
+            "y": 420
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 691,
+            "y": 449
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 693,
+            "y": 443
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 674,
+            "y": 594
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 688,
+            "y": 696
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 695,
+            "y": 496
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 677,
+            "y": 237
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 676,
+            "y": 463
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 677,
+            "y": 429
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 701,
+            "y": 294
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 695,
+            "y": 309
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 695,
+            "y": 309
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 695,
+            "y": 309
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 695,
+            "y": 309
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 695,
+            "y": 309
+        },
+        {
+            "screenHeight": 1080,
+            "screenWidth": 1920,
+            "start": true,
+            "x": 691,
+            "y": 280
+        }
+    ],
+    "device": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",
+    "endTime": 1641211950463,
+    "formData": [
+        {
+            "id": "q1",
+            "timeStamp": 1641211893422,
+            "value": "Female"
+        },
+        {
+            "id": "q2",
+            "timeStamp": 1641211895467,
+            "value": "70+"
+        },
+        {
+            "id": "q3",
+            "timeStamp": 1641211898108,
+            "value": "Ph.D. or higher"
+        },
+        {
+            "id": "q5",
+            "timeStamp": 1641211900968,
+            "value": "Full-time employment"
+        },
+        {
+            "id": "q6",
+            "timeStamp": 1641211902231,
+            "value": "At school or study"
+        },
+        {
+            "id": "q7",
+            "timeStamp": 1641211903603,
+            "value": "6"
+        },
+        {
+            "id": "q8",
+            "timeStamp": 1641211905234,
+            "value": "7"
+        },
+        {
+            "id": "q9",
+            "timeStamp": 1641211906693,
+            "value": "8"
+        },
+        {
+            "id": "q10",
+            "timeStamp": 1641211908700,
+            "value": "7"
+        },
+        {
+            "id": "q12",
+            "timeStamp": 1641211922345,
+            "value": "6"
+        },
+        {
+            "id": "q13",
+            "timeStamp": 1641211923657,
+            "value": "7"
+        },
+        {
+            "id": "q14",
+            "timeStamp": 1641211924940,
+            "value": "8"
+        },
+        {
+            "id": "q15",
+            "timeStamp": 1641211926259,
+            "value": "Less often than once a month but at least 3 or 4 times a year"
+        },
+        {
+            "id": "q16",
+            "timeStamp": 1641211927734,
+            "value": "All above equally"
+        },
+        {
+            "id": "q17",
+            "timeStamp": 1641211929477,
+            "value": "Once a month"
+        },
+        {
+            "id": "q18",
+            "timeStamp": 1641211931198,
+            "value": [
+                4,
+                8
+            ]
+        }
+    ],
+    "randomNum": 3,
+    "startTime": 1641211890567,
+    "userId": "e289a1b3-4bd0-4811-8b58-0921f8c14ac1"
+}
