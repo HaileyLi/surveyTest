@@ -5,14 +5,11 @@ import surveyEN from "../../data/survey-en.json";
 import surveyZH from "../../data/survey-zh.json";
 import VersionAB from "../VersionAB";
 import VersionCD from "../VersionCD";
-import { doSubmitData, doSaveData } from "../../store/actions.js";
-import { connect } from "react-redux";
-import axios from "axios";
 import Box from "@mui/material/Box";
 import { Modal } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import CircularProgress from "@mui/material/CircularProgress";
-//test on Brian adding info
+
 const style = {
   position: "absolute",
   top: "50%",
@@ -25,12 +22,13 @@ const style = {
   p: 4,
   textAlign: "center",
 };
+
 class SurveyContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
       formData: [],
-      clickActionData: [],
+      clickActionData: {},
       fixed: false,
       active: 1,
       loading: false,
@@ -41,9 +39,20 @@ class SurveyContainer extends Component {
     this.setState({ active: num });
   };
 
-  submitData = () => {
-    const { submitData, userId, startTime, clickArray, toggleEnd } = this.props;
-    const { formData, clickActionData, randomNum } = this.state;
+  submitAction = (clickAction) => {
+    const { submitData, userId } = this.props;
+    const endTime = Date.now();
+    let allData = {
+      userId,
+      endTime,
+      clickAction,
+    };
+    submitData(allData);
+  };
+
+  submitForm = () => {
+    const { submitData, userId, startTime, toggleEnd } = this.props;
+    const { formData, randomNum } = this.state;
     const endTime = Date.now();
     const device = navigator.userAgent;
     this.setState({ loading: true });
@@ -53,9 +62,7 @@ class SurveyContainer extends Component {
       startTime,
       endTime,
       formData,
-      clickActionData,
       device,
-      clickArray,
     };
     submitData(allData);
     toggleEnd();
@@ -83,11 +90,20 @@ class SurveyContainer extends Component {
     // click actions
     let clickAction = {};
     if (values) {
-      clickAction = { id, value: values, timeStamp };
+      clickAction = {
+        id,
+        // value: values,
+        timeStamp,
+      };
     } else {
-      clickAction = { id, value, timeStamp };
+      clickAction = {
+        id,
+        // value,
+        timeStamp,
+      };
     }
-    clickAction = [...clickActionData, clickAction];
+    // clickAction = [...clickActionData, clickAction];
+    this.submitAction(clickAction);
     // update form
     let targetValue = {};
     if (values) {
@@ -146,7 +162,7 @@ class SurveyContainer extends Component {
   render() {
     const { formData, active, lang, loading } = this.state;
     const data = lang === "zh" ? surveyZH : surveyEN;
-    let randomNum = 1;
+    let randomNum = 3;
     return (
       <div className="survey-container">
         {loading && (
@@ -174,7 +190,7 @@ class SurveyContainer extends Component {
             updateProgress={(num) => this.updateProgress(num)}
             updateData={this.updateData}
             clearSelection={this.clearSelection}
-            submitData={this.submitData}
+            submitData={this.submitForm}
             active={active}
             showProgress={true}
             formData={formData}
@@ -188,7 +204,7 @@ class SurveyContainer extends Component {
             accordion={false}
             clearSelection={this.clearSelection}
             formData={formData}
-            submitData={this.submitData}
+            submitData={this.submitForm}
             showProgress={false}
           />
         )}
@@ -200,7 +216,7 @@ class SurveyContainer extends Component {
             accordion={true}
             clearSelection={this.clearSelection}
             formData={formData}
-            submitData={this.submitData}
+            submitData={this.submitForm}
             showProgress={false}
           />
         )}
@@ -208,12 +224,5 @@ class SurveyContainer extends Component {
     );
   }
 }
-const mapStateToProps = (state) => ({
-  data: state.data,
-});
-const mapDispatchToProps = (dispatch) => ({
-  submitData: (data) => dispatch(doSubmitData(data)),
-  saveData: (data) => dispatch(doSaveData(data)),
-});
 
-export default connect(mapStateToProps, mapDispatchToProps)(SurveyContainer);
+export default SurveyContainer;
