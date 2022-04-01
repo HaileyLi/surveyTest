@@ -58,21 +58,21 @@ class SurveyContainer extends Component {
     };
     submitData(allData);
     toggleEnd();
-    axios({
-      url: "http://surveybackend-env.eba-uawqt9qi.ap-northeast-1.elasticbeanstalk.com/",
-      method: "POST",
-      data: {
-        ...allData,
-      },
-    })
-      .then(() => {
-        this.setState({ loading: true });
-        console.log("POST success!");
-      })
-      .catch(() => {
-        this.setState({ loading: true });
-        console.log("POST failed!");
-      });
+    // axios({
+    //   url: "http://surveybackend-env.eba-uawqt9qi.ap-northeast-1.elasticbeanstalk.com/",
+    //   method: "POST",
+    //   data: {
+    //     ...allData,
+    //   },
+    // })
+    //   .then(() => {
+    //     this.setState({ loading: true });
+    //     console.log("POST success!");
+    //   })
+    //   .catch(() => {
+    //     this.setState({ loading: true });
+    //     console.log("POST failed!");
+    //   });
   };
 
   updateData = (e, id, values) => {
@@ -180,19 +180,6 @@ class SurveyContainer extends Component {
           />
         )}
         {randomNum === 2 && (
-          <VersionAB
-            data={data}
-            perPage={10}
-            updateProgress={(num) => this.updateProgress(num)}
-            updateData={this.updateData}
-            clearSelection={this.clearSelection}
-            formData={formData}
-            submitData={this.submitData}
-            active={active}
-            showProgress={true}
-          />
-        )}
-        {randomNum === 3 && (
           <VersionCD
             data={data}
             updateProgress={(num) => this.updateProgress(num)}
@@ -204,7 +191,7 @@ class SurveyContainer extends Component {
             showProgress={false}
           />
         )}
-        {randomNum === 4 && (
+        {randomNum === 3 && (
           <VersionCD
             data={data}
             updateProgress={(num) => this.updateProgress(num)}

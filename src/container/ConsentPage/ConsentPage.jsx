@@ -22,22 +22,7 @@ class ConsentPage extends Component {
     };
     submitData(allData);
 
-    axios({
-      url: "http://surveybackend-env.eba-uawqt9qi.ap-northeast-1.elasticbeanstalk.com/",
-      method: "POST",
-      data: {
-        ...allData,
-      },
-    })
-      .then(() => {
-        this.setState({ loading: true });
-        console.log("POST success!");
-        toggleStart();
-      })
-      .catch(() => {
-        this.setState({ loading: true });
-        console.log("POST failed!");
-      });
+    toggleStart();
   };
 
   render() {

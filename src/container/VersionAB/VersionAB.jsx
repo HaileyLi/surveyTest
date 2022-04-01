@@ -98,22 +98,22 @@ class VersionAB extends Component {
               formData={formData}
             />
           ))}
-          <div className="button-row">
-            {page > 1 && (
-              <Button variant="outlined" onClick={(e) => this.backPage(e)}>
-                Back
-              </Button>
-            )}
-            {lastPage ? (
-              <Button variant="contained" onClick={submitData}>
-                Submit
-              </Button>
-            ) : (
-              <Button variant="contained" onClick={(e) => this.nextPage(e)}>
-                Next
-              </Button>
-            )}
-          </div>
+        </div>
+        <div className="button-row">
+          {page > 1 && (
+            <Button variant="outlined" onClick={(e) => this.backPage(e)}>
+              Back
+            </Button>
+          )}
+          {lastPage ? (
+            <Button variant="contained" onClick={submitData}>
+              Submit
+            </Button>
+          ) : (
+            <Button variant="contained" onClick={(e) => this.nextPage(e)}>
+              Next
+            </Button>
+          )}
         </div>
         {showProgress && (
           <ProgressBar
