@@ -32,6 +32,7 @@ class SurveyContainer extends Component {
       fixed: false,
       active: 1,
       loading: false,
+      clickArray: props.clickArray,
     };
   }
 
@@ -39,12 +40,13 @@ class SurveyContainer extends Component {
     this.setState({ active: num });
   };
 
-  submitAction = (clickAction) => {
+  submitAction = (clickAction, timeStamp) => {
     const { submitData, userId } = this.props;
-    const endTime = Date.now();
+    const { clickArray } = this.state;
     let allData = {
       userId,
-      endTime,
+      timeStamp,
+      clickPosition: { ...clickArray, timeStamp },
       clickAction,
     };
     submitData(allData);
@@ -84,7 +86,7 @@ class SurveyContainer extends Component {
   };
 
   updateData = (e, id, values) => {
-    const { formData, clickActionData } = this.state;
+    const { formData } = this.state;
     let value = e.target.value;
     const timeStamp = Date.now();
     // click actions
@@ -102,8 +104,8 @@ class SurveyContainer extends Component {
         timeStamp,
       };
     }
-    // clickAction = [...clickActionData, clickAction];
-    this.submitAction(clickAction);
+    setTimeout(() => this.submitAction(clickAction, timeStamp), 100);
+
     // update form
     let targetValue = {};
     if (values) {
@@ -159,10 +161,21 @@ class SurveyContainer extends Component {
     this.setState({ formData: newFormData, clickActionData: clickAction });
   };
 
+  componentDidUpdate(prevProps) {
+    if (
+      JSON.stringify(this.props.clickArray) !==
+      JSON.stringify(prevProps.clickArray)
+    ) {
+      this.setState({
+        clickArray: this.props.clickArray,
+      });
+    }
+  }
+
   render() {
     const { formData, active, lang, loading } = this.state;
     const data = lang === "zh" ? surveyZH : surveyEN;
-    let randomNum = 3;
+    let randomNum = 2;
     return (
       <div className="survey-container">
         {loading && (

@@ -9,6 +9,7 @@ import { connect } from "react-redux";
 import InfoPage from './container/InfoPage/InfoPage';
 
 import { doSubmitData, doSaveData } from "./store/actions.js";
+import { useRef, useLayoutEffect } from 'react'
 
 const App = (props) => {
 
@@ -32,24 +33,31 @@ const App = (props) => {
   }, []);
 
   const updateClick = (e) =>{
-    let x = e.pageX; //x position within the element.
-    let y = e.pageY;  //y position within the element.
-    let screenWidth=window.screen.width
-    let screenHeight = window.screen.height
-    let updateMouse = {
-      start,x,y,screenWidth,screenHeight
+    if (e.target.tagName !== "LABEL" && e.target.tagName !== "SPAN" && start){
+      let x = e.pageX; //x position within the element.
+      let y = e.pageY;  //y position within the element.
+      let screenWidth=window.screen.width
+      let screenHeight = window.screen.height
+      let updateMouse = {
+        x,y,screenWidth,screenHeight
+      }
+      setClickArray(updateMouse);
+      console.log(updateMouse)
+      if (e.target.tagName !== "INPUT"){
+          submitClick(updateMouse);
+      } else if (e.target.type === "text"){
+        submitClick(updateMouse);
     }
-    setClickArray(updateMouse);
-    submitClick();
+    }
   }
 
-  const submitClick = () => {
+  const submitClick = (updateMouse) => {
     const { submitData } = props;
     const endTime = Date.now();
     let allData = {
       userId,
       endTime,
-      clickArray
+      clickPosition:updateMouse
     };
     submitData(allData);
   };

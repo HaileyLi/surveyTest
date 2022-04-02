@@ -32,7 +32,7 @@ class MultipleChoice extends Component {
           {selections.map((item, i) => (
             <FormControlLabel
               value={item}
-              control={<Radio onClick={(e) => updateData(e, id)} />}
+              control={<Radio onChange={(e) => updateData(e, id)} />}
               label={item}
               key={`item${i}`}
               checked={checkedValue ? quesItem[0].value === item : checkedValue}
