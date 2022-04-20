@@ -38,7 +38,7 @@ class VersionAB extends Component {
 
   nextPage = (e) => {
     let { page } = this.state;
-    const { perPage, data, updateProgress, getAction } = this.props;
+    const { perPage, data, updateProgress } = this.props;
     const all = Math.ceil(data.length / perPage);
     if (page === all - 1) {
       page += 1;
@@ -58,7 +58,7 @@ class VersionAB extends Component {
 
   backPage = (e) => {
     let { page } = this.state;
-    const { updateProgress, getAction } = this.props;
+    const { updateProgress } = this.props;
     if (page === 2) {
       page -= 1;
       this.setState({ page });
@@ -117,7 +117,7 @@ class VersionAB extends Component {
         </div>
         {showProgress && (
           <ProgressBar
-            type="one-page"
+            type="screen"
             all={data.length}
             active={page * perPage}
           />

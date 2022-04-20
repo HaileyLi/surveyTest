@@ -1,10 +1,9 @@
 import React from "react";
 import "./NumSlider.css";
 import { FormControlLabel, RadioGroup, Radio } from "@mui/material";
-import Button from "@mui/material/Button";
 
 const NumSlider = (props) => {
-  const { data, updateData, clearSelection, formData, accordion } = props;
+  const { data, updateData, formData } = props;
   const { id, lowestDesc, highestDesc } = data;
   const quesItem = formData
     ? formData.filter((item) => item.id === data.id)

@@ -96,8 +96,8 @@
         "highestDesc": "Extremely anxious"
     },
     {
-        "id": "q21",
-        "index": 21,
+        "id": "q10",
+        "index": 10,
         "body": "How often do you post on social media?",
         "type": "choice",
         "selections": [
@@ -107,14 +107,14 @@
         ]
     },
     {
-        "id": "q22",
-        "index": 22,
+        "id": "q11",
+        "index": 11,
         "body": "What was/were the type of sport(s) you did in the last four weeks?",
         "type": "text"
     },
     {
-        "id": "q23",
-        "index": 23,
+        "id": "q12",
+        "index": 12,
         "body": "Did you do any paid work in the seven days ending last Sunday, either as an employee or as self-employed? ",
         "type": "choice",
         "selections": [
@@ -123,8 +123,8 @@
         ]
     },
     {
-        "id": "q24",
-        "index": 24,
+        "id": "q13",
+        "index": 13,
         "body": "How is your health in general?",
         "type": "choice",
         "selections": [
@@ -136,8 +136,8 @@
         ]
     },
     {
-        "id": "q25",
-        "index": 25,
+        "id": "q14",
+        "index": 14,
         "body": "How would you rate your level of physical fitness in comparison with others of your age?",
         "type": "choice",
         "selections": [
@@ -149,8 +149,8 @@
         ]
     },
     {
-        "id": "q26",
-        "index": 26,
+        "id": "q15",
+        "index": 15,
         "body": "During the last 12 months how much did physical pain interfere with your normal daily activities? ",
         "type": "choice",
         "selections": [
@@ -162,8 +162,8 @@
         ]
     },
     {
-        "id": "q27",
-        "index": 27,
+        "id": "q16",
+        "index": 16,
         "body": "Over the past 12 months have any of the following areas brought you under high levels of stress.",
         "type": "checkbox",
         "selections": [
@@ -179,8 +179,8 @@
         ]
     },
     {
-        "id": "q28",
-        "index": 28,
+        "id": "q17",
+        "index": 17,
         "body": "Have you tried to reduce or manage stress in your life over the last 12 months by doing any of the following?",
         "type": "checkbox",
         "selections": [
@@ -198,8 +198,8 @@
         ]
     },
     {
-        "id": "q29",
-        "index": 29,
+        "id": "q18",
+        "index": 18,
         "body": "You would feel a real loss if you were forced to give up",
         "type": "checkbox",
         "selections": [
@@ -213,14 +213,14 @@
         ]
     },
     {
-        "id": "q30",
-        "index": 30,
+        "id": "q19",
+        "index": 19,
         "body": "Name one thing that is the most important to you in life",
         "type": "text"
     },
     {
-        "id": "q31",
-        "index": 31,
+        "id": "q20",
+        "index": 20,
         "body": "You would feel completely confident and at ease when",
         "type": "checkbox",
         "selections": [
@@ -233,8 +233,8 @@
         ]
     },
     {
-        "id": "q32",
-        "index": 32,
+        "id": "q21",
+        "index": 21,
         "body": "On average, how would you rate the quality of your sleep?",
         "type": "choice",
         "selections": [
@@ -246,62 +246,62 @@
         ]
     },
     {
-        "id": "q33",
-        "index": 33,
+        "id": "q22",
+        "index": 22,
         "body": "How interesting did you find the questions?",
         "type": "slider",
         "lowestDesc": "Not at all",
         "highestDesc": "Very interesting"
     },
     {
-        "id": "q34",
-        "index": 34,
+        "id": "q23",
+        "index": 23,
         "body": "How easy was it to answer the questions?",
         "type": "slider",
         "lowestDesc": "Not at all",
         "highestDesc": "Very easy"
     },
     {
-        "id": "q35",
-        "index": 35,
+        "id": "q24",
+        "index": 24,
         "body": "How clear did you find the wording of the questions?",
         "type": "slider",
         "lowestDesc": "Not at all",
         "highestDesc": "Very clear"
     },
     {
-        "id": "q36",
-        "index": 36,
+        "id": "q25",
+        "index": 25,
         "body": "What did you think of the layout?",
         "type": "slider",
         "lowestDesc": "Very bad",
         "highestDesc": "Very good"
     },
     {
-        "id": "q37",
-        "index": 37,
+        "id": "q26",
+        "index": 26,
         "body": "How do you think of the length of the survey?",
         "type": "slider",
         "lowestDesc": "Very short",
         "highestDesc": "Very long"
     },
     {
-        "id": "q38",
-        "index": 38,
+        "id": "q27",
+        "index": 27,
         "body": "What is your overall opinion of these questions?",
         "type": "slider",
         "lowestDesc": "I don't like them ",
         "highestDesc": "I like them"
     },
     {
-        "id": "q39",
-        "index": 39,
+        "id": "q28",
+        "index": 28,
         "body": "Rate of overall experience for this survey.",
         "type": "rating"
     },
     {
-        "id": "q40",
-        "index": 40,
+        "id": "q29",
+        "index": 29,
         "body": "Do you have other comments regarding the questionnaire?",
         "type": "text"
     }

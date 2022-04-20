@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./MultipleChoice.css";
 import { RadioGroup, FormControlLabel, Radio } from "@mui/material";
-import Button from "@mui/material/Button";
 
 class MultipleChoice extends Component {
   constructor(props) {
@@ -10,8 +9,7 @@ class MultipleChoice extends Component {
   }
 
   render() {
-    const { data, updateData, clearSelection, formData, accordion } =
-      this.props;
+    const { data, updateData, formData } = this.props;
     const { selections, id } = data;
     const quesItem = formData
       ? formData.filter((item) => item.id === data.id)

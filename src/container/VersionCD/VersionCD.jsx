@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./VersionCD.css";
 import SingleQuesitonCard from "../../component/SingleQuestionCard";
-import ProgressBar from "../../component/ProgressBar";
 import Button from "@mui/material/Button";
 import VersionAccordion from "../../component/VersionAccordion";
 
@@ -12,15 +11,7 @@ class VersionCD extends Component {
   }
 
   render() {
-    const {
-      data,
-      updateData,
-      clearSelection,
-      formData,
-      submitData,
-      accordion,
-      showProgress,
-    } = this.props;
+    const { data, updateData, formData, submitData, accordion } = this.props;
     return (
       <div className="survey-CD">
         <div className="versionCD-container">
@@ -28,9 +19,8 @@ class VersionCD extends Component {
             data.map((item, i) => (
               <SingleQuesitonCard
                 data={item}
-                key={`key_${i}`}
+                key={`key_ques_${i}`}
                 updateData={updateData}
-                clearSelection={clearSelection}
                 formData={formData}
               />
             ))
@@ -38,7 +28,6 @@ class VersionCD extends Component {
             <VersionAccordion
               data={data}
               updateData={updateData}
-              clearSelection={clearSelection}
               formData={formData}
             />
           )}
@@ -48,7 +37,6 @@ class VersionCD extends Component {
             Submit
           </Button>
         </div>
-        {showProgress && <ProgressBar type="one-page" all={data.length} />}
       </div>
     );
   }

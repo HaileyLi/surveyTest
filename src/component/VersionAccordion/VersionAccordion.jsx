@@ -16,6 +16,8 @@ export default function VersionAccordion(props) {
     setExpanded(`panel${i + 1}`);
   };
 
+  console.log(expanded);
+
   return data.map((item, i) => {
     return (
       <AccordionCard
@@ -28,6 +30,7 @@ export default function VersionAccordion(props) {
         handleChange={handleChange}
         formDataList={formDataList}
         toNextQues={toNextQues}
+        key={`key_acc_${i}`}
       ></AccordionCard>
     );
   });

@@ -9,6 +9,7 @@ import Box from "@mui/material/Box";
 import { Modal } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import CircularProgress from "@mui/material/CircularProgress";
+import { postRequest } from "../../Service/actions.js";
 
 const style = {
   position: "absolute",
@@ -33,6 +34,7 @@ class SurveyContainer extends Component {
       active: 1,
       loading: false,
       clickArray: props.clickArray,
+      currAction: "",
     };
   }
 
@@ -41,23 +43,28 @@ class SurveyContainer extends Component {
   };
 
   submitAction = (clickAction, timeStamp) => {
-    const { submitData, userId } = this.props;
+    const { userId } = this.props;
     const { clickArray } = this.state;
     let allData = {
       userId,
-      timeStamp,
       clickPosition: { ...clickArray, timeStamp },
       clickAction,
     };
-    submitData(allData);
+    postRequest(allData)
+      .then(() => {
+        console.log("That's an action!");
+      })
+      .catch(() => {
+        console.log("POST failed!");
+      });
   };
 
   submitForm = () => {
-    const { submitData, userId, startTime, toggleEnd } = this.props;
-    const { formData, randomNum } = this.state;
+    this.setState({ loading: true });
+    const { userId, startTime, toggleEnd, randomNum } = this.props;
+    const { formData } = this.state;
     const endTime = Date.now();
     const device = navigator.userAgent;
-    this.setState({ loading: true });
     let allData = {
       randomNum,
       userId,
@@ -66,27 +73,20 @@ class SurveyContainer extends Component {
       formData,
       device,
     };
-    submitData(allData);
-    toggleEnd();
-    // axios({
-    //   url: "http://surveybackend-env.eba-uawqt9qi.ap-northeast-1.elasticbeanstalk.com/",
-    //   method: "POST",
-    //   data: {
-    //     ...allData,
-    //   },
-    // })
-    //   .then(() => {
-    //     this.setState({ loading: true });
-    //     console.log("POST success!");
-    //   })
-    //   .catch(() => {
-    //     this.setState({ loading: true });
-    //     console.log("POST failed!");
-    //   });
+    console.log(allData);
+    postRequest(allData)
+      .then(() => {
+        console.log("Form submitted!");
+        this.setState({ loading: false });
+        toggleEnd();
+      })
+      .catch(() => {
+        console.log("POST failed!");
+      });
   };
 
   updateData = (e, id, values) => {
-    const { formData } = this.state;
+    const { formData, currAction } = this.state;
     let value = e.target.value;
     const timeStamp = Date.now();
     // click actions
@@ -94,17 +94,19 @@ class SurveyContainer extends Component {
     if (values) {
       clickAction = {
         id,
-        // value: values,
         timeStamp,
       };
     } else {
       clickAction = {
         id,
-        // value,
         timeStamp,
       };
     }
-    setTimeout(() => this.submitAction(clickAction, timeStamp), 100);
+
+    if (currAction !== "text") {
+      setTimeout(() => this.submitAction(clickAction, timeStamp), 100);
+    }
+    this.setState({ currAction: e.target.type });
 
     // update form
     let targetValue = {};
@@ -136,8 +138,6 @@ class SurveyContainer extends Component {
   };
 
   componentDidMount() {
-    const randomNum = this.getRandomInt(1, 4);
-    this.setState({ randomNum });
     const lang = navigator.language;
     if (lang === "zh-CN") {
       this.setState({ lang: "zh" });
@@ -146,10 +146,6 @@ class SurveyContainer extends Component {
     }
     window.scrollTo(0, 0);
   }
-
-  getRandomInt = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  };
 
   clearSelection = (id) => {
     const { formData, clickActionData } = this.state;
@@ -174,8 +170,8 @@ class SurveyContainer extends Component {
 
   render() {
     const { formData, active, lang, loading } = this.state;
+    const { randomNum } = this.props;
     const data = lang === "zh" ? surveyZH : surveyEN;
-    let randomNum = 2;
     return (
       <div className="survey-container">
         {loading && (

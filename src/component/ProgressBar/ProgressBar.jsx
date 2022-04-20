@@ -34,9 +34,7 @@ const ProgressBar = (props) => {
           <div className="text-container">
             <p className="txt">{setText(percentage)}</p>
             <p className="progress-text">
-              <small>
-                Page {active} of {all}
-              </small>
+              {active}/<small>{all}</small>
             </p>
           </div>
         )}

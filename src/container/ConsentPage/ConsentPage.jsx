@@ -1,48 +1,78 @@
 import React, { Component } from "react";
 import "./ConsentPage.css";
-import { doSubmitData, doSaveData } from "../../store/actions.js";
+import { postRequestInit } from "../../Service/actions.js";
 import Button from "@mui/material/Button";
-import { connect } from "react-redux";
-import axios from "axios";
+import { Modal } from "@mui/material";
+import Typography from "@mui/material/Typography";
+import CircularProgress from "@mui/material/CircularProgress";
+import Box from "@mui/material/Box";
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  bgcolor: "background.paper",
+  borderRadius: "10px",
+  boxShadow: 24,
+  p: 4,
+  textAlign: "center",
+};
+
 class ConsentPage extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      loading: false,
+      errorPage: false,
+    };
   }
 
   submitData = () => {
-    const { submitData, userId, startTime, toggleStart } = this.props;
+    this.setState({ loading: true });
+    const { userId, startTime, toggleStart } = this.props;
     const startClick = Date.now();
     const device = navigator.userAgent;
     let allData = {
       userId,
       startTime,
-      startClick,
       device,
+      startClick,
     };
-    submitData(allData);
-    toggleStart();
-    // axios({
-    //   url: "http://surveybackend-env.eba-uawqt9qi.ap-northeast-1.elasticbeanstalk.com/",
-    //   method: "POST",
-    //   data: {
-    //     ...allData,
-    //   },
-    // })
-    //   .then(() => {
-    //     this.setState({ loading: true });
-    //     console.log("POST success!");
-    //     toggleStart();
-    //   })
-    //   .catch(() => {
-    //     this.setState({ loading: true });
-    //     console.log("POST failed!");
-    //   });
+    postRequestInit(allData)
+      .then(() => {
+        console.log("POST success!");
+        toggleStart();
+        this.setState({ loading: false });
+      })
+      .catch(() => {
+        this.setState({ errorPage: true });
+        console.log("POST failed!");
+      });
   };
-
   render() {
+    const { loading, errorPage } = this.state;
     return (
       <div className="survey-container consent-container">
+        {loading && (
+          <Modal
+            open={true}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+          >
+            <Box sx={style}>
+              <Typography id="modal-modal-title" variant="h6" component="h2">
+                <CircularProgress />
+              </Typography>
+              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                {errorPage
+                  ? "Oops, something wrong happened."
+                  : "Thanks for joining! We are preparing your survey..."}
+              </Typography>
+            </Box>
+          </Modal>
+        )}
         <h1>A survey about human wellbeing</h1>
         <div className="consent-wrap">
           <p className="consent-text">
@@ -83,12 +113,5 @@ class ConsentPage extends Component {
     );
   }
 }
-const mapStateToProps = (state) => ({
-  data: state.data,
-});
-const mapDispatchToProps = (dispatch) => ({
-  submitData: (data) => dispatch(doSubmitData(data)),
-  saveData: (data) => dispatch(doSaveData(data)),
-});
 
-export default connect(mapStateToProps, mapDispatchToProps)(ConsentPage);
+export default ConsentPage;
