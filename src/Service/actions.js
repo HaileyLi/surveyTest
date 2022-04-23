@@ -3,15 +3,16 @@ import axios from "axios";
 
 export const postRequestInit = (data) => {
     return axios({
-          url:"http://surveybackend-env-1.eba-uawqt9qi.ap-northeast-1.elasticbeanstalk.com/init",
+          url:"https://www.simplesurvey.click/init",
           method: "POST",
           data:data
         })
 }
 
 export const postRequest = (data) => {
+  console.log(data)
     return axios({
-          url:"http://surveybackend-env-1.eba-uawqt9qi.ap-northeast-1.elasticbeanstalk.com/",
+          url:"https://www.simplesurvey.click",
           method: "POST",
           data:data
         })
