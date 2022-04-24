@@ -7,7 +7,7 @@ import StarRating from "../StarRating";
 import NumSlider from "../NumSlider";
 
 export default function SingleQuestionCard(props) {
-  const { data, updateData, clearSelection, formData } = props;
+  const { data, updateData, clearSelection, formData, lang } = props;
   const { index, body, type, id } = data;
   const quesItem = formData ? formData.filter((item) => item.id === id) : [];
   let checkedValue;
@@ -45,6 +45,7 @@ export default function SingleQuestionCard(props) {
             updateData={updateData}
             clearSelection={clearSelection}
             formData={formData}
+            lang={lang}
           />
         )}
         {type === "rating" && (

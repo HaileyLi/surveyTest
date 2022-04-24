@@ -184,13 +184,23 @@ class SurveyContainer extends Component {
               <Typography id="modal-modal-title" variant="h6" component="h2">
                 <CircularProgress />
               </Typography>
-              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                Wait, we are submitting your request...
-              </Typography>
+              {lang === "zh" ? (
+                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                  稍等，您的问卷正在加载中
+                </Typography>
+              ) : (
+                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                  Wait, we are submitting your request...
+                </Typography>
+              )}
             </Box>
           </Modal>
         )}
-        <h1>A survey about human wellbeing</h1>
+        {lang === "zh" ? (
+          <h1>问卷调查</h1>
+        ) : (
+          <h1>A survey about human wellbeing</h1>
+        )}
 
         {randomNum === 1 && (
           <VersionAB
@@ -203,6 +213,7 @@ class SurveyContainer extends Component {
             active={active}
             showProgress={true}
             formData={formData}
+            lang={lang}
           />
         )}
         {randomNum === 2 && (
@@ -215,6 +226,7 @@ class SurveyContainer extends Component {
             formData={formData}
             submitData={this.submitForm}
             showProgress={false}
+            lang={lang}
           />
         )}
         {randomNum === 3 && (
@@ -227,6 +239,7 @@ class SurveyContainer extends Component {
             formData={formData}
             submitData={this.submitForm}
             showProgress={false}
+            lang={lang}
           />
         )}
       </div>

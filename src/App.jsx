@@ -75,7 +75,7 @@ const App = (props) => {
     // }
 
     // const randomNum = getRandomInt(1, 3);
-    const randomNum = 2;
+    const randomNum = 3;
     setRandomNum(randomNum);
   }, []);
 

@@ -83,6 +83,7 @@ class VersionAB extends Component {
       submitData,
       formData,
       showProgress,
+      lang,
     } = this.props;
     const pageDivide = this.separatePages(perPage, data);
     const { page, lastPage } = this.state;
@@ -96,22 +97,23 @@ class VersionAB extends Component {
               updateData={updateData}
               clearSelection={clearSelection}
               formData={formData}
+              lang={lang}
             />
           ))}
         </div>
         <div className="button-row">
           {page > 1 && (
             <Button variant="outlined" onClick={(e) => this.backPage(e)}>
-              Back
+              {lang === "zh" ? "返回" : "Back"}
             </Button>
           )}
           {lastPage ? (
             <Button variant="contained" onClick={submitData}>
-              Submit
+              {lang === "zh" ? "提交" : "Submit"}
             </Button>
           ) : (
             <Button variant="contained" onClick={(e) => this.nextPage(e)}>
-              Next
+              {lang === "zh" ? "下一页" : "Next"}
             </Button>
           )}
         </div>
@@ -120,6 +122,7 @@ class VersionAB extends Component {
             type="screen"
             all={data.length}
             active={page * perPage}
+            lang={lang}
           />
         )}
       </div>

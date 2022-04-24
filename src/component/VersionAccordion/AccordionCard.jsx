@@ -22,6 +22,7 @@ export default function AccordionCard(props) {
     expanded,
     formDataList,
     toNextQues,
+    lang,
   } = props;
   const { id, index, body, type } = data;
   const quesItem = formData ? formData.filter((item) => item.id === id) : [];
@@ -51,7 +52,11 @@ export default function AccordionCard(props) {
 
           {formDataList.indexOf(id) !== -1 && (
             <div className="answered-div">
-              <p className="answered-flag">Answered</p>
+              {lang === "zh" ? (
+                <p className="answered-flag">已回答</p>
+              ) : (
+                <p className="answered-flag">Answered</p>
+              )}
             </div>
           )}
         </div>
@@ -102,13 +107,23 @@ export default function AccordionCard(props) {
             />
           )}
           <div className="next-div">
-            <Button
-              variant="contained"
-              size="small"
-              onClick={() => toNextQues(i + 1)}
-            >
-              Next Question
-            </Button>
+            {lang === "zh" ? (
+              <Button
+                variant="contained"
+                size="small"
+                onClick={() => toNextQues(i + 1)}
+              >
+                下一个问题
+              </Button>
+            ) : (
+              <Button
+                variant="contained"
+                size="small"
+                onClick={() => toNextQues(i + 1)}
+              >
+                Next Question
+              </Button>
+            )}
           </div>
         </div>
       </AccordionDetails>

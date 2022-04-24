@@ -11,7 +11,8 @@ class VersionCD extends Component {
   }
 
   render() {
-    const { data, updateData, formData, submitData, accordion } = this.props;
+    const { data, updateData, formData, submitData, accordion, lang } =
+      this.props;
     return (
       <div className="survey-CD">
         <div className="versionCD-container">
@@ -22,6 +23,7 @@ class VersionCD extends Component {
                 key={`key_ques_${i}`}
                 updateData={updateData}
                 formData={formData}
+                lang={lang}
               />
             ))
           ) : (
@@ -29,12 +31,13 @@ class VersionCD extends Component {
               data={data}
               updateData={updateData}
               formData={formData}
+              lang={lang}
             />
           )}
         </div>
         <div className="button-row">
           <Button variant="contained" onClick={submitData}>
-            Submit
+            {lang === "zh" ? "提交" : "Submit"}
           </Button>
         </div>
       </div>
