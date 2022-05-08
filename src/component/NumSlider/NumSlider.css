@@ -2,9 +2,9 @@
   margin: 0 20px 0 20px;
   text-align: center;
 }
-label.MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementTop.css-1hpqosy-MuiFormControlLabel-root {
+/* label.MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementTop.css-1hpqosy-MuiFormControlLabel-root {
   margin: 0;
-}
+} */
 
 .explain {
   display: flex;
@@ -18,10 +18,13 @@ label.MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementTop.css-1hpqosy
   text-align: right;
   width: 50%;
 }
-span.MuiTypography-root.MuiTypography-body1.MuiFormControlLabel-label.css-ahj2mt-MuiTypography-root {
+.NumSlider-container.content-container span.MuiTypography-root {
   font-size: 12px;
 }
-.MuiFormGroup-root.MuiFormGroup-row.css-qfz70r-MuiFormGroup-root {
+.NumSlider-container.content-container label.MuiFormControlLabel-root {
+  margin: 0;
+}
+.MuiFormGroup-root.MuiFormGroup-row {
   width: 100%;
   justify-content: space-between;
 }
@@ -36,10 +39,10 @@ span.MuiTypography-root.MuiTypography-body1.MuiFormControlLabel-label.css-ahj2mt
     width: 100px;
   }
 
-  .MuiFormGroup-root.MuiFormGroup-row.css-qfz70r-MuiFormGroup-root {
+  .MuiFormGroup-root.MuiFormGroup-row {
     flex-direction: column;
   }
-  label.MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementTop.css-1hpqosy-MuiFormControlLabel-root {
+  label.MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementTop {
     flex-direction: row;
   }
   .slider-wrap {

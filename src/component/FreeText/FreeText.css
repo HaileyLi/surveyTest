@@ -1,6 +1,4 @@
-input.MuiInput-input.MuiInputBase-input.css-1x51dt5-MuiInputBase-input-MuiInput-input {
-  font-size: 14px;
-}
-.MuiInput-root.MuiInput-underline.MuiInputBase-root.MuiInputBase-colorPrimary.css-a88p61-MuiInputBase-root-MuiInput-root {
+.FreeText-container.content-container > div {
   width: 100%;
+  font-size: 14px;
 }

@@ -229,7 +229,7 @@
         "id": "q21",
         "index": 21,
         "body": "You would feel a real loss if you were forced to give up",
-        "type": "choice",
+        "type": "checkbox",
         "selections": [
             " Attending art events in the future",
             "Taking part in arts activities in the future",

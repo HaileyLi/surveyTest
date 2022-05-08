@@ -1,15 +1,15 @@
 .accord.question-body {
   padding: 10px;
 }
-.css-15v22id-MuiAccordionDetails-root {
+/* .css-15v22id-MuiAccordionDetails-root {
   padding-top: 0px !important;
-}
+} */
 .MuiFormControlLabel-root:hover {
   background: #1976d20d;
 }
-label.MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementEnd.css-j204z7-MuiFormControlLabel-root {
+/* label.MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementEnd.css-j204z7-MuiFormControlLabel-root {
   width: 100%;
-}
+} */
 .answered-div {
   margin-right: 20px;
 }
@@ -33,9 +33,9 @@ label.MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementEnd.css-j204z7-
   text-align: right;
 }
 
-.css-15v22id-MuiAccordionDetails-root {
+/* .css-15v22id-MuiAccordionDetails-root {
   padding-bottom: 40px !important;
-}
+} */
 .MuiCollapse-hidden .next-div {
   opacity: 0;
 }

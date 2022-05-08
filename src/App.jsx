@@ -152,7 +152,7 @@ const App = (props) => {
             clickArray={clickArray}
             toggleEnd={toggleEnd}
             submitData={props.submitData}
-            randomNum={randomNum}
+            randomNum={3}
           />
         ) : (
           <InfoPage type="A" />

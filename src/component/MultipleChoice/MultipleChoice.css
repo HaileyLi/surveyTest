@@ -1,3 +1,7 @@
 .accordion-btn-row {
   text-align: left;
 }
+
+.content-container label.MuiFormControlLabel-root span {
+  font-size: 14px;
+}
