@@ -47,7 +47,6 @@ const App = (props) => {
         scrollAction: { currPosValue, currTimeStamp, isDown },
       };
       if (scrollLength >= 50) {
-        console.log(currPosValue, currTimeStamp, isDown);
         postRequest(allData)
           .then(() => {
             console.log("That's a scroll!");
@@ -69,14 +68,19 @@ const App = (props) => {
     setUserId(userId);
     setStartTime(startTime);
     window.scrollTo(0, 0);
-    // let getStorage = localStorage.getItem('name');
-    // if(getStorage === "survey-survey"){
-    //   setSubmitted(true)
-    // }
+    let getStorage = localStorage.getItem("nameForResearch");
+    if (getStorage === "dissertation-survey") {
+      setSubmitted(true);
+    }
 
-    // const randomNum = getRandomInt(1, 3);
-    const randomNum = 3;
-    setRandomNum(randomNum);
+    let getLayout = localStorage.getItem("survey-layout");
+    if (!getLayout) {
+      const newRandomNum = getRandomInt(1, 3);
+      localStorage.setItem("survey-layout", newRandomNum);
+      setRandomNum(newRandomNum);
+    } else {
+      setRandomNum(Number(getLayout));
+    }
   }, []);
 
   const updateClick = (e) => {
@@ -108,7 +112,7 @@ const App = (props) => {
     };
     postRequest(allData)
       .then(() => {
-        console.log("That's a click!");
+        // console.log("That's a click!");
       })
       .catch(() => {
         console.log("POST failed!");
@@ -117,7 +121,7 @@ const App = (props) => {
 
   const toggleEnd = () => {
     setEnd(true);
-    localStorage.setItem("name", "survey-survey");
+    localStorage.setItem("nameForResearch", "dissertation-survey");
   };
 
   const toggleStart = () => {

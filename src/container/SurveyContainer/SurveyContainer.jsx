@@ -52,7 +52,7 @@ class SurveyContainer extends Component {
     };
     postRequest(allData)
       .then(() => {
-        console.log("That's an action!");
+        // console.log("That's an action!");
       })
       .catch(() => {
         console.log("POST failed!");
@@ -73,7 +73,6 @@ class SurveyContainer extends Component {
       formData,
       device,
     };
-    console.log(allData);
     postRequest(allData)
       .then(() => {
         console.log("Form submitted!");
@@ -199,7 +198,7 @@ class SurveyContainer extends Component {
         {lang === "zh" ? (
           <h1>问卷调查</h1>
         ) : (
-          <h1>A survey about human wellbeing</h1>
+          <h1>Hobbies, Interest and Internet</h1>
         )}
 
         {randomNum === 1 && (

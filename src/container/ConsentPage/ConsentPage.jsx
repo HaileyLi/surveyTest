@@ -52,7 +52,7 @@ class ConsentPage extends Component {
     };
     postRequestInit(allData)
       .then(() => {
-        console.log("POST success!");
+        // console.log("POST success!");
         toggleStart();
         this.setState({ loading: false });
       })
@@ -87,39 +87,85 @@ class ConsentPage extends Component {
             </Box>
           </Modal>
         )}
-        <h1>{lang === "zh" ? "问卷调查" : "A survey about human wellbeing"}</h1>
+        <h1>{lang === "zh" ? "问卷调查" : "Hobbies, Interest and Internet"}</h1>
         <div className="consent-wrap">
           {lang === "zh" ? (
             <p className="consent-text">问卷调查的介绍。。</p>
           ) : (
-            <p className="consent-text">
-              TAKING PART IN THE PROJECT: - I have read and understood the
-              project information sheet dated 06/12/2021or the project has been
-              fully explained to me in the above written information sheet. (If
-              you answer No to this question, you will not proceed with this
-              survey.) - I understand that I choose to participate as a
-              volunteer in this research, which does not create a legally
-              binding agreement nor is it intended to create an employment
-              relationship with the University of Sheffield. - I understand that
-              my taking part is voluntary and that I can withdraw from the study
-              up until the survey remains open and before the data starts to be
-              analysed. I also understand that I do not have to give any reasons
-              for why - I no longer want to take part and there will be no
-              adverse consequences if I choose to withdraw. HOW MY INFORMATION
-              WILL BE USED DURING AND AFTER THE PROJECT: - I understand my
-              personal details such as name, phone number, address and email
-              address etc. will not be revealed to people outside the project. -
-              I understand and agree that my responses may be aggregated and
-              quoted in publications, reports, web pages, and other research
-              outputs. I understand that I will not be named in these outputs. -
-              I understand and agree that other authorised researchers will have
-              access to this data, and they may use it in publications only if
-              they agree to preserve the confidentiality of the information as
-              requested in this form. SO THAT THE INFORMATION YOU PROVIDE CAN BE
-              LEGALLY USED BY THE RESEARCHERS: - I agree to assign the copyright
-              I hold in any materials generated as part of this project to The
-              University of Sheffield.
-            </p>
+            <>
+              <h2>Consent</h2>
+              <h3>Taking Part in the Project</h3>
+              <p className="consent-text">
+                I have read and understood the project information sheet dated
+                01/07/2022 or the project has been fully explained to me. (If
+                you will answer No to this question, please do not proceed with
+                this consent form until you are fully aware of what your
+                participation in the project will mean.)
+              </p>
+              <p className="consent-text">
+                I have been given the opportunity to ask questions about the
+                project.
+              </p>
+              <p className="consent-text">
+                I agree to take part in the project. I understand that taking
+                part in the project will include completing a questionnaire with
+                the recording of click and scroll positions, filling out
+                duration, device model and browser name, and action sequence.
+              </p>
+              <p className="consent-text">
+                I understand that by choosing to participate as a volunteer in
+                this research, this does not create a legally binding agreement
+                nor is it intended to create an employment relationship with the
+                University of Sheffield.
+              </p>
+              <p className="consent-text">
+                I understand that my taking part is voluntary and that I can
+                withdraw from the study before 25/08/2022; I do not have to give
+                any reasons for why I no longer want to take part and there will
+                be no adverse consequences if I choose to withdraw.
+              </p>
+              <h3>
+                How my information will be used during and after the project
+              </h3>
+              <p className="consent-text">
+                I understand my personal details such as name, phone number,
+                address and email address, and values filled in the
+                questionnaire will not be revealed to people outside the
+                project.
+              </p>
+              <p className="consent-text">
+                I understand and agree that my words may be quoted in
+                publications, reports, web pages, and other research outputs. I
+                understand that I will not be named in these outputs unless I
+                specifically request this.
+              </p>
+              <p className="consent-text">
+                I understand and agree that other authorised researchers will
+                have access to this data only if they agree to preserve the
+                confidentiality of the information as requested in this form.
+              </p>
+              <p className="consent-text">
+                I understand and agree that other authorised researchers may use
+                my data in publications, reports, web pages, and other research
+                outputs, only if they agree to preserve the confidentiality of
+                the information as requested in this form.
+              </p>
+              <p className="consent-text">
+                I give permission for the data collected from the survey that I
+                provide to be deposited in secure server provided by the
+                University of Sheffield so it can be used for future research
+                and learning
+              </p>
+              <h3>
+                So that the information you provide can be used legally by the
+                researchers
+              </h3>
+              <p className="consent-text">
+                I agree to assign the copyright I hold in any materials
+                generated as part of this project to The University of
+                Sheffield.
+              </p>
+            </>
           )}
           <div className="button-row">
             {lang === "zh" ? (
@@ -131,6 +177,14 @@ class ConsentPage extends Component {
                 Start
               </Button>
             )}
+            <p>
+              <small>
+                <i>
+                  *By clicking "Start", you accept to the terms and conditions
+                  listed above.
+                </i>
+              </small>
+            </p>
           </div>
         </div>
       </div>

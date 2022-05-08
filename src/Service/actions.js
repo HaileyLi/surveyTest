@@ -10,7 +10,6 @@ export const postRequestInit = (data) => {
 }
 
 export const postRequest = (data) => {
-  console.log(data)
     return axios({
           url:"https://www.simplesurvey.click",
           method: "POST",

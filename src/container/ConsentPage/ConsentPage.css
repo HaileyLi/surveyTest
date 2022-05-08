@@ -13,3 +13,12 @@
     border-radius: 0;
   }
 }
+
+.button-row p {
+  font-size: 12px;
+  margin-top: -1px;
+}
+
+.consent-container {
+  border-radius: unset;
+}
