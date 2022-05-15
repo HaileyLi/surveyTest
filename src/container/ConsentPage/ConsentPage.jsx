@@ -40,7 +40,7 @@ class ConsentPage extends Component {
 
     const browser = this.getBrowserName();
     const deviceType = this.getDeviceType();
-    console.log(browser);
+    this.setState({ browser });
     this.setState({ deviceType });
   }
 
@@ -132,11 +132,11 @@ class ConsentPage extends Component {
     const { userId, startTime, toggleStart, randomNum } = this.props;
     const { browser, deviceType } = this.state;
     const startClick = Date.now();
-    const device = navigator.userAgent;
+    const userAgent = navigator.userAgent;
     let allData = {
       userId,
       startTime,
-      device,
+      userAgent,
       startClick,
       layout: randomNum,
       browser,
