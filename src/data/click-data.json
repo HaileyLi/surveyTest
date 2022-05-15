@@ -1,544 +1,178 @@
 {
-    "userId": "60e97aba-f9e5-467f-8b51-16e84ae795b1",
+    "userId": "158a6d07-02eb-4cdc-8bc8-e538ce02f61f",
     "clickActions": [
         {
             "id": "q1",
-            "timeStamp": 1652610906722
-        },
-        {
-            "id": "q1",
-            "timeStamp": 1652610907321
-        },
-        {
-            "id": "q1",
-            "timeStamp": 1652610908724
-        },
-        {
-            "id": "q1",
-            "timeStamp": 1652610909518
+            "timeStamp": 1652633378422
         },
         {
             "id": "q2",
-            "timeStamp": 1652610910419
-        },
-        {
-            "id": "q2",
-            "timeStamp": 1652610911026
-        },
-        {
-            "id": "q2",
-            "timeStamp": 1652610911634
-        },
-        {
-            "id": "q2",
-            "timeStamp": 1652610912245
-        },
-        {
-            "id": "q2",
-            "timeStamp": 1652610912874
-        },
-        {
-            "id": "q2",
-            "timeStamp": 1652610913642
-        },
-        {
-            "id": "q2",
-            "timeStamp": 1652610914330
+            "timeStamp": 1652633380625
         },
         {
             "id": "q3",
-            "timeStamp": 1652610915704
-        },
-        {
-            "id": "q3",
-            "timeStamp": 1652610916280
+            "timeStamp": 1652633382667
         },
         {
             "id": "q4",
-            "timeStamp": 1652610917218
-        },
-        {
-            "id": "q4",
-            "timeStamp": 1652610918183
-        },
-        {
-            "id": "q5",
-            "timeStamp": 1652610919088
-        },
-        {
-            "id": "q6",
-            "timeStamp": 1652610921239
-        },
-        {
-            "id": "q7",
-            "timeStamp": 1652610922526
+            "timeStamp": 1652633384327
         },
         {
             "id": "q8",
-            "timeStamp": 1652610923310
+            "timeStamp": 1652633510704
         },
         {
             "id": "q9",
-            "timeStamp": 1652610924855
-        },
-        {
-            "id": "q11",
-            "timeStamp": 1652610926348
-        },
-        {
-            "id": "q11",
-            "timeStamp": 1652610926953
-        },
-        {
-            "id": "q12",
-            "timeStamp": 1652610928115
-        },
-        {
-            "id": "q12",
-            "timeStamp": 1652610928679
-        },
-        {
-            "id": "q13",
-            "timeStamp": 1652610929822
-        },
-        {
-            "id": "q14",
-            "timeStamp": 1652610930376
-        },
-        {
-            "id": "q15",
-            "timeStamp": 1652610931508
-        },
-        {
-            "id": "q17",
-            "timeStamp": 1652610933390
-        },
-        {
-            "id": "q19",
-            "timeStamp": 1652610934667
-        },
-        {
-            "id": "q19",
-            "timeStamp": 1652610935593
-        },
-        {
-            "id": "q20",
-            "timeStamp": 1652610936646
-        },
-        {
-            "id": "q20",
-            "timeStamp": 1652610937255
-        },
-        {
-            "id": "q21",
-            "timeStamp": 1652610938312
-        },
-        {
-            "id": "q21",
-            "timeStamp": 1652610938903
-        },
-        {
-            "id": "q23",
-            "timeStamp": 1652610940560
-        },
-        {
-            "id": "q23",
-            "timeStamp": 1652610941157
-        },
-        {
-            "id": "q24",
-            "timeStamp": 1652610942254
-        },
-        {
-            "id": "q25",
-            "timeStamp": 1652610943302
-        },
-        {
-            "id": "q26",
-            "timeStamp": 1652610944520
-        },
-        {
-            "id": "q27",
-            "timeStamp": 1652610945872
-        },
-        {
-            "id": "q28",
-            "timeStamp": 1652610946939
-        },
-        {
-            "id": "q29",
-            "timeStamp": 1652610947995
+            "timeStamp": 1652633513200
         }
     ],
     "clickPositions": [
         {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610906722,
-            "x": 430,
-            "y": 223
+            "screenHeight": 748,
+            "screenWidth": 375,
+            "timeStamp": 1652633378422,
+            "x": 248,
+            "y": 405
         },
         {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610907321,
-            "x": 430,
-            "y": 223
+            "screenHeight": 748,
+            "screenWidth": 375,
+            "timeStamp": 1652633380625,
+            "x": 267,
+            "y": 498
         },
         {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610908724,
-            "x": 665,
-            "y": 265
+            "screenHeight": 748,
+            "screenWidth": 375,
+            "timeStamp": 1652633382667,
+            "x": 261,
+            "y": 645
         },
         {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610909518,
-            "x": 734,
-            "y": 322
+            "screenHeight": 748,
+            "screenWidth": 375,
+            "timeStamp": 1652633384327,
+            "x": 267,
+            "y": 799
         },
         {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610910419,
-            "x": 546,
-            "y": 420
+            "screenHeight": 748,
+            "screenWidth": 375,
+            "timeStamp": 1652633510704,
+            "x": 223,
+            "y": 1007
         },
         {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610911026,
-            "x": 616,
-            "y": 481
+            "screenHeight": 748,
+            "screenWidth": 375,
+            "timeStamp": 1652633512243,
+            "x": 83,
+            "y": 1281
         },
         {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610911634,
-            "x": 658,
-            "y": 517
+            "screenHeight": 748,
+            "screenWidth": 375,
+            "timeStamp": 1652633513200,
+            "x": 286,
+            "y": 1383
         },
         {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610912245,
-            "x": 710,
-            "y": 562
+            "screenHeight": 748,
+            "screenWidth": 375,
+            "timeStamp": 1652633521339,
+            "x": 213,
+            "y": 1241
         },
         {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610912874,
-            "x": 755,
-            "y": 600
+            "screenHeight": 748,
+            "screenWidth": 375,
+            "timeStamp": 1652633522947,
+            "x": 233,
+            "y": 1855
         },
         {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610913642,
-            "x": 590,
-            "y": 630
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610914330,
-            "x": 650,
-            "y": 692
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610915704,
-            "x": 546,
-            "y": 835
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610916280,
-            "x": 622,
-            "y": 979
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610917218,
-            "x": 550,
-            "y": 1284
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610918183,
-            "x": 560,
-            "y": 1460
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610919088,
-            "x": 583,
-            "y": 1842
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610919734,
-            "x": 196,
-            "y": 1766
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610920431,
-            "x": 1143,
-            "y": 1792
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610921239,
-            "x": 568,
-            "y": 2033
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610922526,
-            "x": 635,
-            "y": 2242
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610923310,
-            "x": 694,
-            "y": 2417
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610924855,
-            "x": 504,
-            "y": 2603
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610925549,
-            "x": 513,
-            "y": 2706
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610926348,
-            "x": 499,
-            "y": 2841
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610926953,
-            "x": 525,
-            "y": 2981
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610928115,
-            "x": 520,
-            "y": 3311
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610928679,
-            "x": 535,
-            "y": 3454
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610929822,
-            "x": 504,
-            "y": 3694
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610930376,
-            "x": 582,
-            "y": 3874
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610931508,
-            "x": 532,
-            "y": 4239
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610933390,
-            "x": 547,
-            "y": 4664
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610934667,
-            "x": 545,
-            "y": 4952
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610935593,
-            "x": 605,
-            "y": 5026
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610936646,
-            "x": 552,
-            "y": 5153
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610937255,
-            "x": 612,
-            "y": 5323
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610938312,
-            "x": 557,
-            "y": 5523
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610938903,
-            "x": 611,
-            "y": 5698
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610940560,
-            "x": 545,
-            "y": 6000
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610941157,
-            "x": 596,
-            "y": 6082
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610942254,
-            "x": 561,
-            "y": 6317
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610943302,
-            "x": 689,
-            "y": 6514
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610944520,
-            "x": 760,
-            "y": 6719
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610945872,
-            "x": 560,
-            "y": 6887
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610946939,
-            "x": 743,
-            "y": 7055
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610947995,
-            "x": 689,
-            "y": 7203
-        },
-        {
-            "screenHeight": 821,
-            "screenWidth": 1440,
-            "timeStamp": 1652610948794,
-            "x": 689,
-            "y": 7326
+            "screenHeight": 748,
+            "screenWidth": 375,
+            "timeStamp": 1652633525362,
+            "x": 241,
+            "y": 2917
         }
     ],
-    "device": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36",
+    "device": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/101.0.4951.44 Mobile/15E148 Safari/604.1",
     "formData": "",
-    "layout": 2,
+    "layout": 3,
     "scrollActions": [
         {
-            "currPosValue": -435,
-            "currTimeStamp": 1652610915173,
+            "currPosValue": -131,
+            "currTimeStamp": 1652633381440,
+            "isDown": false
+        },
+        {
+            "currPosValue": -189,
+            "currTimeStamp": 1652633383166,
             "isDown": true
         },
         {
-            "currPosValue": -1071,
-            "currTimeStamp": 1652610918483,
+            "currPosValue": -362,
+            "currTimeStamp": 1652633384876,
             "isDown": true
         },
         {
-            "currPosValue": -1437,
-            "currTimeStamp": 1652610921584,
+            "currPosValue": -2693,
+            "currTimeStamp": 1652633386719,
+            "isDown": false
+        },
+        {
+            "currPosValue": -1987,
+            "currTimeStamp": 1652633387902,
+            "isDown": false
+        },
+        {
+            "currPosValue": 49,
+            "currTimeStamp": 1652633388969,
             "isDown": true
         },
         {
-            "currPosValue": -2498,
-            "currTimeStamp": 1652610927372,
+            "currPosValue": -69,
+            "currTimeStamp": 1652633423189,
             "isDown": true
         },
         {
-            "currPosValue": -3306,
-            "currTimeStamp": 1652610930786,
+            "currPosValue": -595,
+            "currTimeStamp": 1652633427137,
             "isDown": true
         },
         {
-            "currPosValue": -4384,
-            "currTimeStamp": 1652610935915,
+            "currPosValue": -728,
+            "currTimeStamp": 1652633428310,
+            "isDown": false
+        },
+        {
+            "currPosValue": 7,
+            "currTimeStamp": 1652633429423,
             "isDown": true
         },
         {
-            "currPosValue": -5096,
-            "currTimeStamp": 1652610939287,
+            "currPosValue": -92,
+            "currTimeStamp": 1652633509761,
             "isDown": true
         },
         {
-            "currPosValue": -5856,
-            "currTimeStamp": 1652610942634,
+            "currPosValue": -930,
+            "currTimeStamp": 1652633515097,
             "isDown": true
+        },
+        {
+            "currPosValue": -999,
+            "currTimeStamp": 1652633522118,
+            "isDown": true
+        },
+        {
+            "currPosValue": -2537,
+            "currTimeStamp": 1652633524188,
+            "isDown": false
         }
     ],
-    "startClick": 1652610903581,
-    "startTime": 1652610901847
+    "startClick": 1652633369684,
+    "startTime": 1652633321558
 }
