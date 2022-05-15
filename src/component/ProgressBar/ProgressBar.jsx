@@ -5,7 +5,7 @@ const ProgressBar = (props) => {
   const { lang } = props;
   const setText = (percentage) => {
     let level1 =
-      lang === "zh" ? "谢谢您抽出时间" : "Thank you for taking time...";
+      lang === "zh" ? "感谢您抽出宝贵的时间" : "Thank you for taking time...";
     let level2 = lang === "zh" ? "感谢您的参与" : "We appreciate your time...";
     let level3 = lang === "zh" ? "就还剩一半啦" : "Half way there...";
     let level4 = lang === "zh" ? "快要答完了" : "Almost there...";

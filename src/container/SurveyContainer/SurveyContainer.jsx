@@ -185,7 +185,7 @@ class SurveyContainer extends Component {
               </Typography>
               {lang === "zh" ? (
                 <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                  稍等，您的问卷正在加载中
+                  稍等，正在提交问卷...
                 </Typography>
               ) : (
                 <Typography id="modal-modal-description" sx={{ mt: 2 }}>
@@ -195,11 +195,14 @@ class SurveyContainer extends Component {
             </Box>
           </Modal>
         )}
-        {lang === "zh" ? (
-          <h1>问卷调查</h1>
-        ) : (
-          <h1>Hobbies, Interest and Internet</h1>
-        )}
+        <p className="sup-title">
+          {lang === "zh" ? "问卷调查" : "A survey about"}
+        </p>
+        <h1 className="survey-title">
+          {lang === "zh"
+            ? "爱好，兴趣与网络"
+            : "Hobbies, Interest and Internet"}
+        </h1>
 
         {randomNum === 1 && (
           <VersionAB

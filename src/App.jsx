@@ -6,6 +6,7 @@ import ConsentPage from "./container/ConsentPage/ConsentPage";
 import { postRequest } from "./Service/actions.js";
 import InfoPage from "./container/InfoPage/InfoPage";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
+import clickData from "./data/click-data.json";
 
 const App = (props) => {
   const [start, setStart] = useState(false);
@@ -63,9 +64,17 @@ const App = (props) => {
   };
 
   useEffect(() => {
-    const userId = uuidv4();
+    let userId = localStorage.getItem("survey-userID");
+    if (!userId) {
+      let newUserId = uuidv4();
+      localStorage.setItem("survey-userID", newUserId);
+      setUserId(newUserId);
+    } else {
+      setUserId(userId);
+    }
+
     const startTime = Date.now();
-    setUserId(userId);
+
     setStartTime(startTime);
     window.scrollTo(0, 0);
     let getStorage = localStorage.getItem("nameForResearch");
@@ -142,6 +151,7 @@ const App = (props) => {
             userId={userId}
             startTime={startTime}
             toggleStart={toggleStart}
+            randomNum={randomNum}
           />
         ) : end === false ? (
           <SurveyContainer
@@ -159,13 +169,16 @@ const App = (props) => {
         )}
       </div>
       {/* <div className="click-heatmap">
-        {clickData.clickArray.map(item=>{
-          let left = item.x
-          let top = (item.y/item.screenWidth)*window.screen.width
-        return <div style={{left:`${left}px`, top:`${top}px`}}className="dot"></div>
-
-  })}
-
+        {clickData.clickPositions.map((item) => {
+          let left = item.x;
+          let top = (item.y / item.screenWidth) * window.screen.width;
+          return (
+            <div
+              style={{ left: `${left}px`, top: `${top}px` }}
+              className="dot"
+            ></div>
+          );
+        })}
       </div> */}
     </div>
   );
