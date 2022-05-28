@@ -135,6 +135,7 @@ class ConsentPage extends Component {
     const { browser, deviceType } = this.state;
     const startClick = Date.now();
     const userAgent = navigator.userAgent;
+    const lang = navigator.language;
     let allData = {
       userId,
       startTime,
@@ -143,6 +144,7 @@ class ConsentPage extends Component {
       layout: randomNum,
       browser,
       deviceType,
+      lang,
     };
     postRequestInit(allData)
       .then(() => {

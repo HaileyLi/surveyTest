@@ -170,8 +170,8 @@ class SurveyContainer extends Component {
 
   render() {
     const { formData, active, lang, loading } = this.state;
-    // const { randomNum } = this.props;
-    let randomNum = 2;
+    const { randomNum } = this.props;
+    // let randomNum = 2;
     const data = lang === "zh" ? surveyZH : surveyEN;
     return (
       <div className="survey-container">
