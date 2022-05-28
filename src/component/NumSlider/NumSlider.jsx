@@ -28,7 +28,7 @@ const NumSlider = (props) => {
           name="position"
           defaultValue="top"
         >
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, i) => (
+          {[1, 2, 3, 4, 5, 6, 7].map((item, i) => (
             <FormControlLabel
               value={item}
               control={<Radio onClick={(e) => updateData(e, id)} />}

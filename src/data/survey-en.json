@@ -30,7 +30,7 @@
     {
         "id": "q3",
         "index": 3,
-        "body": "What is the highest degree or level of education you have completed",
+        "body": "What is the highest degree or level of education you have completed?",
         "selections": [
             "High School",
             "Some college credit, no degree",
@@ -168,7 +168,6 @@
         "body": "How often do you use the Internet?",
         "type": "choice",
         "selections": [
-            "Everyday",
             "More than once a day",
             "Once a day",
             "Once a month",
@@ -214,7 +213,7 @@
     {
         "id": "q20",
         "index": 20,
-        "body": "How is your health in general",
+        "body": "How is your health in general?",
         "type": "choice",
         "selections": [
             "Very good",
@@ -231,11 +230,9 @@
         "body": "You would feel a real loss if you were forced to give up",
         "type": "checkbox",
         "selections": [
-            " Attending art events in the future",
             "Taking part in arts activities in the future",
             "Visiting museums and galleries in the future",
             "Visiting heritage sites in the future",
-            "Using library services in the future",
             "Taking part in sport in the future",
             "Playing video or computer games"
         ]

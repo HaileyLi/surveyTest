@@ -50,7 +50,7 @@ const App = (props) => {
       if (scrollLength >= 50) {
         postRequest(allData)
           .then(() => {
-            console.log("That's a scroll!");
+            // console.log("That's a scroll!");
           })
           .catch(() => {
             console.log("POST failed!");

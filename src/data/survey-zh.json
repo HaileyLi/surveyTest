@@ -5,7 +5,9 @@
         "body": "您的性别?",
         "selections": [
             "男",
-            "女"
+            "女",
+            "其他",
+            "暂不透露"
         ],
         "type": "choice"
     },
@@ -19,33 +21,30 @@
             "41-50",
             "51-60",
             "61-70",
-            "70+"
+            "70+",
+            "其他",
+            "暂不透露"
         ],
         "type": "choice"
     },
     {
         "id": "q3",
         "index": 3,
-        "body": "您的学历？",
+        "body": "您的学历?",
         "selections": [
             "高中",
             "专科",
             "本科",
             "研究生",
             "博士",
-            "其他"
+            "其他",
+            "暂不透露"
         ],
         "type": "choice"
     },
     {
         "id": "q4",
         "index": 4,
-        "body": "您的国籍?",
-        "type": "text"
-    },
-    {
-        "id": "q5",
-        "index": 5,
         "body": "您现在的就业状态?",
         "selections": [
             "全职",
@@ -54,255 +53,259 @@
             "自雇",
             "学生",
             "退休",
-            "其他"
+            "其他",
+            "暂不透露"
+        ],
+        "type": "choice"
+    },
+    {
+        "id": "q5",
+        "index": 5,
+        "body": "您现在正在哪里填写此调查问卷?",
+        "selections": [
+            "在家",
+            "在公司工作",
+            "在学校学习",
+            "和家人，朋友或邻居在一起",
+            "其他地方",
+            "暂不透露"
         ],
         "type": "choice"
     },
     {
         "id": "q6",
         "index": 6,
-        "body": "您现在在哪里?",
-        "selections": [
-            "在家",
-            "在公司工作",
-            "在学校学习",
-            "和家人，朋友或邻居在一起",
-            "其他地方"
-        ],
-        "type": "choice"
-    },
-    {
-        "id": "q7",
-        "index": 7,
         "body": "总体来说，您认为自己对目前的生活满意程度如何?",
         "type": "slider",
         "lowestDesc": "非常不满意",
         "highestDesc": "非常满意"
     },
     {
-        "id": "q8",
-        "index": 8,
+        "id": "q7",
+        "index": 7,
         "body": "总体来说，您觉得您现在生活中所做的事情再多大程度上是有意义的?",
         "type": "slider",
         "lowestDesc": "没有意义",
         "highestDesc": "非常有意义"
     },
     {
-        "id": "q9",
-        "index": 9,
+        "id": "q8",
+        "index": 8,
         "body": "总体来说，您昨天的焦虑程度如何?",
         "type": "slider",
         "lowestDesc": "不焦虑",
         "highestDesc": "非常焦虑"
     },
     {
+        "id": "q9",
+        "index": 9,
+        "body": "总体来说，您昨天感觉快乐吗?",
+        "type": "slider",
+        "lowestDesc": "不快乐",
+        "highestDesc": "非常快乐"
+    },
+    {
         "id": "q10",
         "index": 10,
-        "body": "How often do you post on social media?",
-        "type": "choice",
-        "selections": [
-            "Very often",
-            "Somewhat often",
-            "Rarely"
-        ]
+        "body": "您在空闲时间通常做什么？",
+        "type": "text"
     },
     {
         "id": "q11",
         "index": 11,
-        "body": "What was/were the type of sport(s) you did in the last four weeks?",
-        "type": "text"
+        "body": "您有什么爱好? (在以下选项中选择)",
+        "type": "checkbox",
+        "selections": [
+            "读书",
+            "设计/画画",
+            "打游戏",
+            "摄影",
+            "烹饪",
+            "钓鱼",
+            "听音乐",
+            "看电视/电影"
+        ]
     },
     {
         "id": "q12",
         "index": 12,
-        "body": "Did you do any paid work in the seven days ending last Sunday, either as an employee or as self-employed? ",
+        "body": "您多久玩一次电脑或其他电子游戏?",
         "type": "choice",
         "selections": [
-            "Yes",
-            "No"
+            "至少每天一次",
+            "至少每周一次",
+            "至少每月一次",
+            "每年有3-4次",
+            "至少每年一次",
+            "每年少于一次",
+            "暂不透露"
         ]
     },
     {
         "id": "q13",
         "index": 13,
-        "body": "How is your health in general?",
-        "type": "choice",
-        "selections": [
-            "Very good",
-            "Good",
-            "Alright",
-            "Bad",
-            "Very bad"
-        ]
+        "body": "您如何评价您的计算机技能？",
+        "type": "slider",
+        "lowestDesc": "无",
+        "highestDesc": "精通"
     },
     {
         "id": "q14",
         "index": 14,
-        "body": "How would you rate your level of physical fitness in comparison with others of your age?",
+        "body": "您在日常生活中最常使用哪种设备访问互联网？",
         "type": "choice",
         "selections": [
-            "Very good",
-            "Good",
-            "Alright",
-            "Bad",
-            "Very bad"
+            "电脑",
+            "手机",
+            "平板",
+            "以上均有",
+            "暂不透露"
         ]
     },
     {
         "id": "q15",
         "index": 15,
-        "body": "During the last 12 months how much did physical pain interfere with your normal daily activities? ",
+        "body": "您多久上一次网?",
         "type": "choice",
         "selections": [
-            "Not at all",
-            "A little bit",
-            "Moderately",
-            "Quite a bit",
-            "Extremely"
+            "每天多次",
+            "每天一次",
+            "每月一次",
+            "每月不到一次",
+            "暂不透露"
         ]
     },
     {
         "id": "q16",
         "index": 16,
-        "body": "Over the past 12 months have any of the following areas brought you under high levels of stress.",
-        "type": "checkbox",
-        "selections": [
-            "Workload for responsibilities",
-            "Other anxieties about work",
-            "Unemployment",
-            "Financial worries",
-            "Relationship problems",
-            "Your own health",
-            "Health of or need to care for a family member",
-            "Moving home",
-            "None of the above"
-        ]
+        "body": "您最喜欢的手机应用程序的名称?",
+        "type": "text"
     },
     {
         "id": "q17",
         "index": 17,
-        "body": "Have you tried to reduce or manage stress in your life over the last 12 months by doing any of the following?",
-        "type": "checkbox",
+        "body": "您多久在社交媒体上发帖?",
+        "type": "choice",
         "selections": [
-            "Taking a holiday",
-            "Reducing working hours",
-            "Taking sick leave",
-            "Giving time to a hobby or leisure activity",
-            "Taking regular exercise",
-            "Taking medication",
-            "Drinking alcohol",
-            "Yoga",
-            "Overeating",
-            "Undereating",
-            "None of the above"
+            "经常",
+            "有时",
+            "很少",
+            "暂不透露"
         ]
     },
     {
         "id": "q18",
         "index": 18,
-        "body": "You would feel a real loss if you were forced to give up",
-        "type": "checkbox",
-        "selections": [
-            "Attending art events in the future",
-            "Taking part in arts activities in the future",
-            "Visiting museums and galleries in the future",
-            "Visiting heritage sites in the future",
-            "Using library services in the future",
-            "Taking part in sport in the future",
-            "Playing video or computer games"
-        ]
+        "body": "您在过去四周内做过什么运动?",
+        "type": "text"
     },
     {
         "id": "q19",
         "index": 19,
-        "body": "Name one thing that is the most important to you in life",
-        "type": "text"
+        "body": "在截止至上周日的7天内，您是否以雇员或个体经营者的身份从事过任何有偿工作?",
+        "type": "choice",
+        "selections": [
+            "是",
+            "否",
+            "暂不透露"
+        ]
     },
     {
         "id": "q20",
         "index": 20,
-        "body": "You would feel completely confident and at ease when",
-        "type": "checkbox",
+        "body": "您的总体健康状况如何?",
+        "type": "choice",
         "selections": [
-            "At arts events such as musicals, plays, dance events or musical performances",
-            "At art, photography or craft exhibitions",
-            "In museums and galleries",
-            "At heritage sites",
-            "In libraries",
-            "In situations where people take part in sport or exercise activity"
+            "非常好",
+            "好",
+            "中等",
+            "不好",
+            "非常糟糕",
+            "暂不透露"
         ]
     },
     {
         "id": "q21",
         "index": 21,
-        "body": "On average, how would you rate the quality of your sleep?",
-        "type": "choice",
+        "body": "以下选项中，其中哪一项您被迫放弃您会感到很失落？",
+        "type": "checkbox",
         "selections": [
-            "Very good",
-            "Good",
-            "Alright",
-            "Bad",
-            "Very bad"
+            "参加艺术活动",
+            "参观博物馆和画廊",
+            "参观名胜古迹",
+            "参加体育运动",
+            "玩电脑以及其他电子游戏"
         ]
     },
     {
         "id": "q22",
         "index": 22,
-        "body": "How interesting did you find the questions?",
-        "type": "slider",
-        "lowestDesc": "Not at all",
-        "highestDesc": "Very interesting"
+        "body": "您认为您生命中最重要的是",
+        "type": "text"
     },
     {
         "id": "q23",
         "index": 23,
-        "body": "How easy was it to answer the questions?",
-        "type": "slider",
-        "lowestDesc": "Not at all",
-        "highestDesc": "Very easy"
+        "body": "平均而言，您如何评价您最近的睡眠质量?",
+        "type": "choice",
+        "selections": [
+            "很好",
+            "好",
+            "一般",
+            "不好",
+            "暂不透露"
+        ]
     },
     {
         "id": "q24",
         "index": 24,
-        "body": "How clear did you find the wording of the questions?",
+        "body": "你觉得此次调查问卷的问题有多有趣",
         "type": "slider",
-        "lowestDesc": "Not at all",
-        "highestDesc": "Very clear"
+        "lowestDesc": "很无聊",
+        "highestDesc": "很有趣"
     },
     {
         "id": "q25",
         "index": 25,
-        "body": "What did you think of the layout?",
+        "body": "您觉得回答此次调查问卷的内容难度",
         "type": "slider",
-        "lowestDesc": "Very bad",
-        "highestDesc": "Very good"
+        "lowestDesc": "很难",
+        "highestDesc": "很容易"
     },
     {
         "id": "q26",
         "index": 26,
-        "body": "How do you think of the length of the survey?",
+        "body": "您觉得此次调查问卷的问题的措辞",
         "type": "slider",
-        "lowestDesc": "Very short",
-        "highestDesc": "Very long"
+        "lowestDesc": "不清楚",
+        "highestDesc": "很清楚"
     },
     {
         "id": "q27",
         "index": 27,
-        "body": "What is your overall opinion of these questions?",
+        "body": "您觉得此次调查问卷的界面排布",
         "type": "slider",
-        "lowestDesc": "I don't like them ",
-        "highestDesc": "I like them"
+        "lowestDesc": "不喜欢",
+        "highestDesc": "很喜欢"
     },
     {
         "id": "q28",
         "index": 28,
-        "body": "Rate of overall experience for this survey.",
-        "type": "rating"
+        "body": "您觉得此次调查问卷的长度",
+        "type": "slider",
+        "lowestDesc": "很短",
+        "highestDesc": "很长"
     },
     {
         "id": "q29",
         "index": 29,
-        "body": "Do you have other comments regarding the questionnaire?",
+        "body": "请为此次调查问卷总体体验打分",
+        "type": "rating"
+    },
+    {
+        "id": "q30",
+        "index": 30,
+        "body": "对于此调查问卷您有其他建议吗?",
         "type": "text"
     }
 ]

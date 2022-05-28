@@ -10,6 +10,7 @@ import { Modal } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import CircularProgress from "@mui/material/CircularProgress";
 import { postRequest } from "../../Service/actions.js";
+import Contact from "../../component/Contact";
 
 const style = {
   position: "absolute",
@@ -169,7 +170,8 @@ class SurveyContainer extends Component {
 
   render() {
     const { formData, active, lang, loading } = this.state;
-    const { randomNum } = this.props;
+    // const { randomNum } = this.props;
+    let randomNum = 2;
     const data = lang === "zh" ? surveyZH : surveyEN;
     return (
       <div className="survey-container">
@@ -198,10 +200,12 @@ class SurveyContainer extends Component {
         <p className="sup-title">
           {lang === "zh" ? "问卷调查" : "A survey about"}
         </p>
+
         <h1 className="survey-title">
           {lang === "zh"
             ? "爱好，兴趣与网络"
             : "Hobbies, Interest and Internet"}
+          <Contact lang={lang} />
         </h1>
 
         {randomNum === 1 && (
