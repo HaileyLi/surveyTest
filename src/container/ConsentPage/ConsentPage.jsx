@@ -144,7 +144,6 @@ class ConsentPage extends Component {
       layout: randomNum,
       browser,
       deviceType,
-      lang,
     };
     postRequestInit(allData)
       .then(() => {
