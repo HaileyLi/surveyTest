@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e864d573.chunk.css",
+    "main.js": "/static/js/main.9fac7587.chunk.js",
+    "main.js.map": "/static/js/main.9fac7587.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.98ff873d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.98ff873d.js.map",
+    "static/js/2.dbdcb6ac.chunk.js": "/static/js/2.dbdcb6ac.chunk.js",
+    "static/js/2.dbdcb6ac.chunk.js.map": "/static/js/2.dbdcb6ac.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.e864d573.chunk.css.map": "/static/css/main.e864d573.chunk.css.map",
+    "static/js/2.dbdcb6ac.chunk.js.LICENSE.txt": "/static/js/2.dbdcb6ac.chunk.js.LICENSE.txt",
+    "static/media/Participant_Information-Sheet_-_Information_School.6d38217d.pdf": "/static/media/Participant_Information-Sheet_-_Information_School.6d38217d.pdf",
+    "static/media/consent-form.567465ac.pdf": "/static/media/consent-form.567465ac.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.98ff873d.js",
+    "static/js/2.dbdcb6ac.chunk.js",
+    "static/css/main.e864d573.chunk.css",
+    "static/js/main.9fac7587.chunk.js"
+  ]
+}
