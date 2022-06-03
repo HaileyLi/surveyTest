@@ -6,7 +6,7 @@ import ConsentPage from "./container/ConsentPage/ConsentPage";
 import { postRequest } from "./Service/actions.js";
 import InfoPage from "./container/InfoPage/InfoPage";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
-import clickData from "./data/click-data.json";
+// import clickData from "./data/click-data.json";
 
 const App = (props) => {
   const [start, setStart] = useState(false);

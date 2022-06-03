@@ -45,6 +45,28 @@ class InfoPage extends Component {
                 : "You have already taken part in the survey."}
             </p>
           )}
+
+          {lang !== "zh" && (
+            <p>
+              Redeem Survey Code with one click:{" "}
+              <a
+                href="https://www.surveycircle.com/BYQ1-TY82-QG13-ZYP6"
+                target="_blank"
+              >
+                https://www.surveycircle.com/BYQ1-TY82-QG13-ZYP6
+              </a>
+            </p>
+          )}
+
+          {lang !== "zh" && (
+            <p>
+              The following code gives you credits that can be used to get free
+              research participants at SurveySwap.io.
+              <a href="https://surveyswap.io/sr/FKQH-4629-EIJ3" target="_blank">
+                https://surveyswap.io/sr/FKQH-4629-EIJ3
+              </a>
+            </p>
+          )}
         </div>
       </div>
     );

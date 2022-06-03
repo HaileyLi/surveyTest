@@ -39,17 +39,6 @@ class VersionCD extends Component {
           <Button variant="contained" onClick={submitData}>
             {lang === "zh" ? "提交" : "Submit"}
           </Button>
-          {lang !== "zh" && (
-            <p>
-              Redeem Survey Code with one click:{" "}
-              <a
-                href="https://www.surveycircle.com/BYQ1-TY82-QG13-ZYP6"
-                target="_blank"
-              >
-                https://www.surveycircle.com/BYQ1-TY82-QG13-ZYP6
-              </a>
-            </p>
-          )}
         </div>
       </div>
     );
